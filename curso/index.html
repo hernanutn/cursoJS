@@ -4,61 +4,120 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/index.css">
         <script src="index.js"></script>
         <title>Curso Js</title>
     </head>
     <body>
-        <form action="" method="POST" id="frmPersona">
+        <div id="container">
             <fieldset>
                 <legend>Datos Personales:</legend>
-                <table>
-                    <tr>
-                        <td><label for="txtNombre">Nombre: </label></td>
-                        <td><input type="text" name="nombre" id="txtNombre" placeholder="Ingrese su nombre"></td>                    
-                    </tr>
-                    <tr>
-                        <td><label for="txtApellido">Apellido: </label></td>                    
-                        <td><input type="text" name="apellido" id="txtApellido" placeholder="Ingrese su apellido"></td>                    
-                    </tr>
-                    <tr>
-                        <td><label for="txtEdad">Edad: </label></td>                    
-                        <td><input type="text" name="edad" id="txtEdad" placeholder="Ingrese su edad"></td>                    
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="rdoGenero" id="rdoGenero" checked></td>
-                        <td><label for="rdoGenero">Masculino</label></td>                    
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="rdoGenero" id="rdoGenero"></td>
-                        <td><label for="rdoGenero">Femenino</label></td>                    
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="maneja" id="chkManeja"></td>
-                        <td><label for="chkManeja">Maneja</label></td>                    
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="nada" id="chkNada"></td>
-                        <td><label for="chkNada">Sabe Nadar</label></td>                    
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="bicileta" id="chkBici"></td>
-                        <td><label for="chkBici">Anda en bici</label></td>                    
-                    </tr>
-                    <tr>
-                        <td><label for="cmbPais">Pais: </label></td>                    
-                        <td>
-                            <select name="pais" id="cmbPais">
-                                <option value="1">Argentina</option>
-                                <option value="2">Paraguay</option>
-                                <option value="3">Chile</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>                   
-                        <td><input type="submit" name="enviar" id="enviar" value="Enviar Datos"></td>
-                    </tr>
-                </table>        
-            </form>
-        </fieldset>
+                <form action="" method="POST" id="frmPersona">                
+                    <table>
+                        <tr>
+                            <td><label for="txtNombre">Nombre: </label></td>
+                            <td><input type="text" name="nombre" id="txtNombre" placeholder="Ingrese su nombre" required></td>                    
+                        </tr>
+                        <tr>
+                            <td><label for="txtApellido">Apellido: </label></td>                    
+                            <td><input type="text" name="apellido" id="txtApellido" placeholder="Ingrese su apellido"></td>                    
+                        </tr>
+                        <tr>
+                            <td><label for="txtEdad">Edad: </label></td>                    
+                            <td><input type="number" name="edad" id="txtEdad" placeholder="Ingrese su edad" min="18" max="65"></td>                    
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="rdoGenero" id="rdoGeneroM" value="M" checked></td>
+                            <td><label for="rdoGenero">Masculino</label></td>                    
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="rdoGenero" id="rdoGeneroF" value="F"></td>
+                            <td><label for="rdoGenero">Femenino</label></td>                    
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="maneja" id="chkManeja"></td>
+                            <td><label for="chkManeja">Maneja</label></td>                    
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="nada" id="chkNada"></td>
+                            <td><label for="chkNada">Sabe Nadar</label></td>                    
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="bicileta" id="chkBici"></td>
+                            <td><label for="chkBici">Anda en bici</label></td>                    
+                        </tr>
+                        <tr>
+                            <td><label for="cmbPais">Pais: </label></td>                    
+                            <td>
+                                <select name="pais" id="cmbPais">
+                                    <option value="Ar">Argentina</option>
+                                    <option value="Br">Brasil</option>
+                                    <option value="Uy">Uruguay</option>
+                                    <option value="Pr">Paraguay</option>
+                                    <option value="Cl">Chile</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>                   
+                            <td><input type="submit" name="enviar" id="enviar" value="Enviar Datos"></td>
+                        </tr>
+                    </table>        
+                </form>        
+            </fieldset>
+            <fieldset>
+                <legend>Datos Personales:</legend>
+                <form action="" method="POST" id="frmPersona">
+                    <table>
+                        <tr>
+                            <td><label for="txtNombre">Nombre: </label></td>
+                            <td><input type="text" name="nombre" id="txtNombre2" placeholder="Ingrese su nombre"></td>                    
+                        </tr>
+                        <tr>
+                            <td><label for="txtApellido2">Apellido: </label></td>                    
+                            <td><input type="text" name="apellido" id="txtApellido2" placeholder="Ingrese su apellido"></td>                    
+                        </tr>
+                        <tr>
+                            <td><label for="txtEdad2">Edad: </label></td>                    
+                            <td><input type="text" name="edad" id="txtEdad2" placeholder="Ingrese su edad"></td>                    
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="rdoGenero" id="rdoGeneroM2" value="M" checked></td>
+                            <td><label for="rdoGeneroM2">Masculino</label></td>                    
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="rdoGenero" id="rdoGeneroF2" value="F"></td>
+                            <td><label for="rdoGeneroF2">Femenino</label></td>                    
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="maneja" id="chkManeja2"></td>
+                            <td><label for="chkManeja2">Maneja</label></td>                    
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="nada" id="chkNada2"></td>
+                            <td><label for="chkNada2">Sabe Nadar</label></td>                    
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="bicileta" id="chkBici2"></td>
+                            <td><label for="chkBici2">Anda en bici</label></td>                    
+                        </tr>
+                        <tr>
+                            <td><label for="cmbPais2">Pais: </label></td>                    
+                            <td>
+                                <select name="pais" id="cmbPais2">
+                                    <option value="Ar">Argentina</option>
+                                    <option value="Br">Brasil</option>
+                                    <option value="Uy">Uruguay</option>
+                                    <option value="Pr">Paraguay</option>
+                                    <option value="Cl">Chile</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>                   
+                            <td><input type="submit" name="enviar" id="enviar" value="Enviar Datos"></td>
+                        </tr>
+                    </table>        
+                </form>
+            </fieldset>        
+        </div>
     </body>
 </html>

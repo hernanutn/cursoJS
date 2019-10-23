@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="personas.js"></script>
+        <title>Formularios</title>
+    </head>
+    <body>
+        <button id="btn1">
+            <div>10</div>
+        </button>
+        <script>
+            let btn1 = document.getElementById('btn1');
+            btn1.addEventListener('click', hola)
+            function hola(e){
+                console.log(e.target.innerText);
+            }
+            /* map
+            filter
+            some devuelve true si alguno cumple
+            every devuelve true si todos cumplen
+            reduce primer parametro el return anterior del callback, segundo el elemento del array
+            
+            
+            /*let numeros = [23, 45, 67, 32, 12];
+            console.log(numeros.sort((a,b) => {
+                return a-b;
+            }));*/
+            console.log(personas.sort((p1, p2) => {
+                /*if(p1.gender < p2.gender) {
+                    return -1
+                }
+                return 1;*/
+                return p1.first_name.localeCompare(p2.first_name);
+            }));
+
+        </script>
+    </body>
+</html>
